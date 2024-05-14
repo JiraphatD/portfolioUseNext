@@ -1,0 +1,53 @@
+"use client"
+import My from "./components/My";
+import Horizon from "./components/Horizon";
+import Learning from "./components/Learning";
+import { Grid } from "@mui/material";
+export default function Home() {
+  return (
+    <>
+      <My />
+      <Horizon />
+      <div className="skill h-screen flex justify-center items-center uppercase">
+        <div className="relative text-center">
+          <Grid container>
+            <Grid item lg={12}>
+              <p>my skill that I have or the tool that I used to use</p>
+            </Grid>
+            <Grid item lg={4}  className="mt-10">
+              <p>HTML & CSS & JS</p>
+              <p>python</p>
+              <p>c language</p>
+              <p>java</p>
+              <p>nodejs</p>
+              <p>react</p>
+              <p>laravel</p>
+              <p>WordPress</p>
+            </Grid>
+            <Grid item lg={4}  className="mt-10">
+              <p>PostgreSQL</p>
+              <p>MySQL</p>
+              <p>Firebase</p>
+            </Grid>
+            <Grid item lg={4}  className="mt-10">
+              <p>github</p>
+              <p>canva</p>
+              <p>figma</p>
+              <p>Microsoft Office</p>
+              <p>Adobe Photoshop</p>
+              <p>Adobe Premiere Pro</p>
+              <p>Adobe XD</p>
+            </Grid>
+          </Grid>
+        </div>
+      </div>
+      <Learning />
+      <footer className="uppercase float-right mr-10 mb-5">
+        <h1>contact</h1>
+        <h2>tel : 093-091-0002</h2>
+        <h2>email : jiraphat.deaw@gmail.com</h2>
+        <h2>facebook : Jiraphat Deaw</h2>
+      </footer>
+    </>
+  );
+}
