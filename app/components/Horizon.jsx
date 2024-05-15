@@ -3,9 +3,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 function ScrollSection() {
+    const phone = useMediaQuery('(min-width:300px) and (max-width:1200px)');
     const sectionRef = useRef(null);
     const triggerRef = useRef(null);
 
@@ -101,29 +103,52 @@ function ScrollSection() {
 
     return (
         <>
-            <section className="scroll-section-outer">
-                <div ref={triggerRef}>
-                    <div ref={sectionRef} className="scroll-section-inner">
-                        {contents.map((content, index) => {
-                            return(
-                                <div className="scroll-section" key={index}>
-                                    <div className="relative text-center">
-                                        <p>{content.title}</p>
-                                        <div className="flex justify-center my-5">
-                                            <Link href={content.link} target="_blank">
-                                                <Image src={content.image} height={1000} width={1000} alt="" className="shadow-xl"/>
-                                            </Link>
-                                        </div>
-                                        <p className="2xl:mx-40 sm:mx-10 2xl:text-base sm:text-sm">
-                                            {content.description}
-                                        </p>
+            {phone ? (
+                <>
+                    {contents.map((content, index) => {
+                        return(
+                            <div className="" key={index}>
+                                <div className="relative text-center mt-20 mx-10">
+                                    <p>{content.title}</p>
+                                    <div className="flex justify-center my-5">
+                                        <Link href={content.link} target="_blank">
+                                            <Image src={content.image} height={1000} width={1000} alt="" className="shadow-xl"/>
+                                        </Link>
                                     </div>
+                                    <p className="2xl:mx-40 sm:mx-20 2xl:text-base sm:text-sm">
+                                        {content.description}
+                                    </p>
                                 </div>
-                            )
-                        })}
+                            </div>
+                        )
+                    })}
+                </>
+            ) : (
+                <section className="scroll-section-outer">
+                    <div ref={triggerRef}>
+                        <div ref={sectionRef} className="scroll-section-inner">
+                            {contents.map((content, index) => {
+                                return(
+                                    <div className="scroll-section" key={index}>
+                                        <div className="relative text-center">
+                                            <p>{content.title}</p>
+                                            <div className="flex justify-center my-5">
+                                                <Link href={content.link} target="_blank">
+                                                    <Image src={content.image} height={1000} width={1000} alt="" className="shadow-xl"/>
+                                                </Link>
+                                            </div>
+                                            <p className="2xl:mx-40 sm:mx-20 2xl:text-base sm:text-sm">
+                                                {content.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            )}
+            
         </>
     );
 }

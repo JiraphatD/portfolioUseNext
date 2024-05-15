@@ -14,7 +14,7 @@ export default function Home() {
             <Grid item lg={12}>
               <p>my skill that I have or the tool that I used to use</p>
             </Grid>
-            <Grid item lg={4}  className="mt-10">
+            <Grid item lg={4} xs={12}  className="mt-10">
               <p>HTML & CSS & JS</p>
               <p>python</p>
               <p>c language</p>
@@ -24,12 +24,12 @@ export default function Home() {
               <p>laravel</p>
               <p>WordPress</p>
             </Grid>
-            <Grid item lg={4}  className="mt-10">
+            <Grid item lg={4} xs={12}  className="mt-10">
               <p>PostgreSQL</p>
               <p>MySQL</p>
               <p>Firebase</p>
             </Grid>
-            <Grid item lg={4}  className="mt-10">
+            <Grid item lg={4} xs={12}  className="mt-10">
               <p>github</p>
               <p>canva</p>
               <p>figma</p>

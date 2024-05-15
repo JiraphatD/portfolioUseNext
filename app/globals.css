@@ -28,3 +28,32 @@
     font-size: var(--headlineMedium);
     text-transform: uppercase;
 }
+
+.name-text{
+    font-size: 4vw;
+    font-weight: 800;
+    z-index: 1;
+    color: white;
+    margin-top: 70%;
+}
+.hi-text{
+    font-size: 3vw;
+}
+.hi-text span{
+    font-size: 7vw;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .name-text{
+        font-size: 10vw;
+        margin-top: 70vh;
+    }
+    .hi-text{
+        font-size: 5vw;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+    .name-text{
+        font-size: 10vw;
+        margin-top: 50vh;
+    }
+}
