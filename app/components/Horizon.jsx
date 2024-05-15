@@ -79,7 +79,7 @@ function ScrollSection() {
         {
             image: '/photo/card.png',
             title: 'Project CARD DETECTION AND COUNT',
-            description: `This is a card detection and count project using YOLO v.5, which can detect and count cards. (the problem with incorrect detection numbers is how long it can be trained)`,
+            description: `This is a card detection and count project using YOLO v.5, which can detect and count cards. \n (the problem with incorrect detection numbers is how long it can be trained)`,
             link: 'https://drive.google.com/drive/folders/1tf5gKbJ0k9FNoI-hAXuPUeaBP1PEI_97?usp=sharing'
         },
         {
@@ -135,10 +135,10 @@ function ScrollSection() {
                                             <p>{content.title}</p>
                                             <div className="flex justify-center my-5">
                                                 <Link href={content.link} target="_blank">
-                                                    <Image src={content.image} height={1000} width={1000} alt="" className="shadow-xl"/>
+                                                    <Image src={content.image} height={700} width={700} alt="" className="shadow-xl"/>
                                                 </Link>
                                             </div>
-                                            <p className="2xl:mx-40 sm:mx-20 2xl:text-base sm:text-sm">
+                                            <p className="2xl:mx-40 sm:mx-20 2xl:text-base sm:text-sm whitespace-pre-line" >
                                                 {content.description}
                                             </p>
                                         </div>
