@@ -29,6 +29,7 @@ function ScrollSection() {
                 end: "6000 top",
                 scrub: 0.6,
                 pin: true,
+                snap: 1 / (contents.length - 1)
             },
         }
         );
