@@ -11,7 +11,7 @@ export default function Home() {
       <div className="skill h-screen flex justify-center items-center uppercase">
         <div className="relative text-center">
           <Grid container>
-            <Grid item lg={12}>
+            <Grid item lg={12} className="mySkill">
               <p>my skill that I have or the tool that I used to use</p>
             </Grid>
             <Grid item lg={4} xs={12}  className="mt-10">

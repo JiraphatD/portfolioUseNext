@@ -8,7 +8,7 @@ function My() {
         <>
             <Grid container className="bg-gray-950 pt-10">
                 <Grid item lg={5} xs={12} className="h-screen relative">
-                    <Image src={profile} alt="myProfile" className="-z-1 absolute h-full" />
+                    <Image src={profile} alt="myProfile" className="-z-1 absolute h-full size-fit" />
                     <div className="absolute name-text">
                         <p className="mx-20">JIRAPHAT</p>
                         <p className="mx-40">WUNPUAN</p>
@@ -25,7 +25,10 @@ function My() {
                 </Grid>
             </Grid>
             <div className="flex items-center justify-center h-screen">
-                <p className="text-center uppercase">this is my work and experience</p>
+                <div className="relative uppercase">
+                    <p className="text-center uppercase">this is my work and experience</p>
+                    <p>you can click image to view information</p>
+                </div>
             </div>
         </>
     );

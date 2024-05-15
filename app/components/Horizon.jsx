@@ -56,7 +56,7 @@ function ScrollSection() {
             image: '/photo/fast.png',
             title: 'Project Fast-8',
             description: 'this is education web site, by telling the story of the history of bus number 8.',
-            link: 'https://63070019.github.io/Fast-8/'  //fix url
+            link: 'https://fast-8.vercel.app/'
         },
         {
             image: '/photo/master.png',
@@ -74,7 +74,7 @@ function ScrollSection() {
             image: '/photo/java.png',
             title: 'Project STORE MANAGEMENT SYSTEM',
             description: 'This is department store management system using Java language, which lets users add products and manage them.',
-            link: 'https://github.com/63070019/Java_storeManage'    //fix url
+            link: 'https://github.com/JiraphatD/Java-storeManage'
         },
         {
             image: '/photo/card.png',
@@ -92,7 +92,7 @@ function ScrollSection() {
             image: '/photo/c.png',
             title: 'Project Department Store',
             description: `This is department store management system using the c language, which lets users add products and manage them.`,
-            link: 'https://github.com/63070019/cumo?tab=readme-ov-file' //fix url
+            link: 'https://github.com/JiraphatD/compro-project'
         },
         {
             image: '/photo/old.png',
