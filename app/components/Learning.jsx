@@ -9,6 +9,7 @@ function Learning() {
                     <p className="mt-10">NextJs</p>
                     <p>MongoDB</p>
                     <p>Docker</p>
+                    <p>TypeScript</p>
                 </div>
             </div>
             <div className="flex justify-center items-center h-screen">
