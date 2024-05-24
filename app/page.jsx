@@ -42,11 +42,11 @@ export default function Home() {
         </div>
       </div>
       <Learning />
-      <footer className="uppercase float-right mr-10 mb-5">
-        <h1>contact</h1>
-        <h2>tel : 093-091-0002</h2>
-        <h2>email : jiraphat.deaw@gmail.com</h2>
-        <h2>facebook : Jiraphat Deaw</h2>
+      <footer className="float-right mr-10 mb-5">
+        <h1 className="uppercase">contact</h1>
+        <h2><span className="uppercase">tel : </span>093-091-0002</h2>
+        <h2><span className="uppercase">email : </span>jiraphat.deaw@gmail.com</h2>
+        <h2><span className="uppercase">facebook : </span>Jiraphat Deaw</h2>
       </footer>
     </>
   );

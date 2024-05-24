@@ -8,6 +8,7 @@ function Learning() {
                     <p>Now, I'm learning and trying some tools to develop my skills.</p>
                     <p className="mt-10">NextJs</p>
                     <p>MongoDB</p>
+                    <p>Docker</p>
                 </div>
             </div>
             <div className="flex justify-center items-center h-screen">
