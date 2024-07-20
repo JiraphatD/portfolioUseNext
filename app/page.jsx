@@ -13,6 +13,7 @@ export default function Home() {
           <Grid container>
             <Grid item lg={12} className="mySkill">
               <p>my skill that I have or the tool that I used to use</p>
+              something
             </Grid>
             <Grid item lg={4} xs={12}  className="mt-10">
               <p>HTML & CSS & JS</p>
