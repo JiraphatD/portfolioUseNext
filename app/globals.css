@@ -29,47 +29,91 @@
     text-transform: uppercase;
 }
 
-.name-text{
+.name-text {
     font-size: 4vw;
     font-weight: 800;
-    z-index: 1;
+    /* z-index: 1; */
     color: white;
-    margin-top: 70%;
+    bottom: 0;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    text-shadow: 2px 2px black;
+    padding-top: 100vh;
 }
-.hi-text{
+.hi-text {
     font-size: 3vw;
 }
-.hi-text span{
+.hi-text span {
     font-size: 7vw;
 }
-@media only screen and (min-width: 300px) and (max-width: 600px){
-    .name-text{
+.glow-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px); /* This creates the soft spread */
+    z-index: 1; /* Behind content */
+}
+
+.circle-2 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+        circle,
+        rgba(40, 120, 200, 0.25),
+        transparent 70%
+    );
+    bottom: 15%;
+    right: 10%;
+}
+
+.circle-3 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(
+        circle,
+        rgba(180, 80, 220, 0.2),
+        transparent 70%
+    );
+    top: 50%;
+    right: 20%;
+}
+.circle-4 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(
+        circle,
+        rgba(197, 80, 220, 0.2),
+        transparent 70%
+    );
+    top: 20%;
+    right: 40%;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .name-text {
         font-size: 10vw;
         margin-top: 70vh;
     }
-    .hi-text{
+    .hi-text {
         font-size: 5vw;
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 800px){
-    .name-text{
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .name-text {
         font-size: 10vw;
     }
 }
-@media only screen and (min-width: 800px) and (max-width: 900px){
-    .name-text{
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    .name-text {
         margin-top: 20vh;
         margin-left: 40vw;
     }
-    .skill{
+    .skill {
         margin-top: 40vh;
     }
-    .mySkill{
+    .mySkill {
         margin-left: 23vw;
     }
 }
-@media only screen and (min-width: 900px) and (max-width: 1200px){
-    .name-text{
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .name-text {
         font-size: 10vw;
         margin-top: 50vh;
         margin-left: 20vw;
