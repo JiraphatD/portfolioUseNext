@@ -30,8 +30,8 @@ function My() {
               className="z-0 absolute bottom-0"
             />
             <div className="absolute name-text py-10">
-              <p className="mx-20">JIRAPHAT</p>
-              <p className="mx-40">WUNPUAN</p>
+              <p className="xl:mx-20 mx-20">JIRAPHAT</p>
+              <p className="xl:mx-40 ml-28">WUNPUAN</p>
             </div>
           </div>
         </Grid>
@@ -44,7 +44,7 @@ function My() {
             <span>
               I graduated from King Mongkut's Institute of Technology Ladkrabang
               with a Bachelor of Science in Information Technology.
-            </span>{" "}
+            </span>
             <br></br>
             <br></br>
             <span>
